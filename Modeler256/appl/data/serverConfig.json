@@ -1,0 +1,32 @@
+{
+    "port": 3000,
+    "mountpoints": [
+        {
+            "path": "/www",
+            "location": "/[OPTIONAL_INSERT_LOCAL_PATH_TO_SENCHA_FRAMEWORK_HERE]"
+        },
+        {
+            "path": "/framework",
+            "location": "C:\\Users\\haris\\AppData\\Local\\sf\\node_modules\\@ind-rcg\\framework"
+        },
+        {
+            "path": "/framework/Attachments",
+            "location": "./Attachments"
+        },
+        {
+            "path": "/framework/themeImages",
+            "location": "./ThemeImages"
+        },
+        {
+            "path": "/framework/app",
+            "location": "C:\\Users\\haris\\Downloads\\Modeler256\\Modeler256\\appl\\build\\app"
+        },
+        {
+            "path": "/framework/configuration.json",
+            "location": "C:\\Users\\haris\\Downloads\\Modeler256\\Modeler256\\appl\\data\\appConfig.json"
+        }
+    ],
+    "database": "app.db3",
+    "referenceImage": "",
+    "referenceImagePath": ""
+}

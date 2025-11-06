@@ -1,0 +1,41 @@
+[2025-11-06T17:03:04.018] [INFO] local - The local database app.db3 started successfully.
+[2025-11-06T17:03:04.021] [INFO] local - The database extension loaded successfully. The SQL operator DISTANCE() is ready for use in the server.
+[2025-11-06T17:03:04.041] [INFO] server - Backend server has started. Use the URL http://localhost:3000/framework/index.html?desktop to perform any testing activities. It is recommended to execute the application in incognito window of your browser and take care only one incognito window is opened to avoid influences.
+[2025-11-06T17:03:04.041] [INFO] server - Use CTRL+C to stop the backend server.
+[2025-11-06T17:03:14.094] [DEBUG] local - Executing operation : executeParameterized
+[2025-11-06T17:03:14.094] [DEBUG] local - Payload : {"anchor_id":"1","action":"executeAsync","operation":"executeParameterized","transaction":"0","workload":[{"query":"CREATE TABLE IF NOT EXISTS [RpsContext] (\"Name\" TEXT, \"Value\" TEXT)","parameters":[],"qid":"1"},{"query":"CREATE TABLE IF NOT EXISTS [UsrSearchProfiles] (\"PKey\" TEXT NOT NULL, \"UsrMainPKey\" TEXT NOT NULL, \"AsoName\" TEXT NOT NULL, \"SearchProfile\" TEXT NOT NULL)","parameters":[],"qid":"2"},{"query":"CREATE TABLE IF NOT EXISTS [FwTimer] (\"timerId\" TEXT NOT NULL, \"autoDestroy\" TEXT NOT NULL, \"duration\" TEXT, \"message\" TEXT, \"appContextValues\" TEXT, \"objectClassName\" TEXT, \"objectMethodName\" TEXT, \"startTime\" TEXT, \"restartTime\" TEXT, \"endTime\" TEXT,\"isRunning\" TEXT, \"elapsedTime\" TEXT,\"groupId\" TEXT)","parameters":[],"qid":"3"},{"query":"CREATE TABLE IF NOT EXISTS [RpsPKey] (\"PKey\" TEXT NOT NULL, \"UserLu\" TEXT, \"NextSystemGenerationCounter\" INTEGER, \"SystemInitializationCounter\" INTEGER, \"RplLU\" TEXT)","parameters":[],"qid":"4"}]}
+[2025-11-06T17:03:14.094] [DEBUG] local - /exec REQUEST WITH 4 
+[2025-11-06T17:03:14.094] [DEBUG] local - QUERY 0 : "CREATE TABLE IF NOT EXISTS [RpsContext] (\"Name\" TEXT, \"Value\" TEXT)"
+[2025-11-06T17:03:14.094] [DEBUG] local - QUERY 1 : "CREATE TABLE IF NOT EXISTS [UsrSearchProfiles] (\"PKey\" TEXT NOT NULL, \"UsrMainPKey\" TEXT NOT NULL, \"AsoName\" TEXT NOT NULL, \"SearchProfile\" TEXT NOT NULL)"
+[2025-11-06T17:03:14.095] [DEBUG] local - QUERY 2 : "CREATE TABLE IF NOT EXISTS [FwTimer] (\"timerId\" TEXT NOT NULL, \"autoDestroy\" TEXT NOT NULL, \"duration\" TEXT, \"message\" TEXT, \"appContextValues\" TEXT, \"objectClassName\" TEXT, \"objectMethodName\" TEXT, \"startTime\" TEXT, \"restartTime\" TEXT, \"endTime\" TEXT,\"isRunning\" TEXT, \"elapsedTime\" TEXT,\"groupId\" TEXT)"
+[2025-11-06T17:03:14.095] [DEBUG] local - QUERY 3 : "CREATE TABLE IF NOT EXISTS [RpsPKey] (\"PKey\" TEXT NOT NULL, \"UserLu\" TEXT, \"NextSystemGenerationCounter\" INTEGER, \"SystemInitializationCounter\" INTEGER, \"RplLU\" TEXT)"
+[2025-11-06T17:03:14.132] [DEBUG] local - OVERALL EXECUTION TIME: 38 ms
+[2025-11-06T17:03:14.175] [DEBUG] local - Executing operation : selectParameterized
+[2025-11-06T17:03:14.175] [DEBUG] local - Payload : {"anchor_id":"6","action":"executeAsync","operation":"selectParameterized","transaction":"0","workload":[{"query":"SELECT * FROM sqlite_master","parameters":[],"qid":1}]}
+[2025-11-06T17:03:14.175] [DEBUG] local - /query REQUEST RECEIVED
+[2025-11-06T17:03:14.176] [DEBUG] local - QUERY: {"query":"SELECT * FROM sqlite_master","parameters":[],"qid":1}
+[2025-11-06T17:03:14.176] [DEBUG] local - ROWS RETURNED: 4
+[2025-11-06T17:03:14.176] [DEBUG] local - {"anchor_id":"6","success":true,"results":[{"qid":1,"result":[{"type":"table","name":"RpsContext","tbl_name":"RpsContext","rootpage":2,"sql":"CREATE TABLE [RpsContext] (\"Name\" TEXT, \"Value\" TEXT)"},{"type":"table","name":"UsrSearchProfiles","tbl_name":"UsrSearchProfiles","rootpage":3,"sql":"CREATE TABLE [UsrSearchProfiles] (\"PKey\" TEXT NOT NULL, \"UsrMainPKey\" TEXT NOT NULL, \"AsoName\" TEXT NOT NULL, \"SearchProfile\" TEXT NOT NULL)"},{"type":"table","name":"FwTimer","tbl_name":"FwTimer","rootpage":4,"sql":"CREATE TABLE [FwTimer] (\"timerId\" TEXT NOT NULL, \"autoDestroy\" TEXT NOT NULL, \"duration\" TEXT, \"message\" TEXT, \"appContextValues\" TEXT, \"objectClassName\" TEXT, \"objectMethodName\" TEXT, \"startTime\" TEXT, \"restartTime\" TEXT, \"endTime\" TEXT,\"isRunning\" TEXT, \"elapsedTime\" TEXT,\"groupId\" TEXT)"},{"type":"table","name":"RpsPKey","tbl_name":"RpsPKey","rootpage":5,"sql":"CREATE TABLE [RpsPKey] (\"PKey\" TEXT NOT NULL, \"UserLu\" TEXT, \"NextSystemGenerationCounter\" INTEGER, \"SystemInitializationCounter\" INTEGER, \"RplLU\" TEXT)"}]}]}
+[2025-11-06T17:03:14.176] [DEBUG] local - OVERALL EXECUTION TIME: 1 ms
+[2025-11-06T17:03:14.181] [DEBUG] local - Executing operation : selectParameterized
+[2025-11-06T17:03:14.181] [DEBUG] local - Payload : {"anchor_id":"10","action":"executeAsync","operation":"selectParameterized","transaction":"0","workload":[{"query":"SELECT * FROM sqlite_master","parameters":[],"qid":1}]}
+[2025-11-06T17:03:14.181] [DEBUG] local - /query REQUEST RECEIVED
+[2025-11-06T17:03:14.182] [DEBUG] local - QUERY: {"query":"SELECT * FROM sqlite_master","parameters":[],"qid":1}
+[2025-11-06T17:03:14.182] [DEBUG] local - ROWS RETURNED: 4
+[2025-11-06T17:03:14.182] [DEBUG] local - {"anchor_id":"10","success":true,"results":[{"qid":1,"result":[{"type":"table","name":"RpsContext","tbl_name":"RpsContext","rootpage":2,"sql":"CREATE TABLE [RpsContext] (\"Name\" TEXT, \"Value\" TEXT)"},{"type":"table","name":"UsrSearchProfiles","tbl_name":"UsrSearchProfiles","rootpage":3,"sql":"CREATE TABLE [UsrSearchProfiles] (\"PKey\" TEXT NOT NULL, \"UsrMainPKey\" TEXT NOT NULL, \"AsoName\" TEXT NOT NULL, \"SearchProfile\" TEXT NOT NULL)"},{"type":"table","name":"FwTimer","tbl_name":"FwTimer","rootpage":4,"sql":"CREATE TABLE [FwTimer] (\"timerId\" TEXT NOT NULL, \"autoDestroy\" TEXT NOT NULL, \"duration\" TEXT, \"message\" TEXT, \"appContextValues\" TEXT, \"objectClassName\" TEXT, \"objectMethodName\" TEXT, \"startTime\" TEXT, \"restartTime\" TEXT, \"endTime\" TEXT,\"isRunning\" TEXT, \"elapsedTime\" TEXT,\"groupId\" TEXT)"},{"type":"table","name":"RpsPKey","tbl_name":"RpsPKey","rootpage":5,"sql":"CREATE TABLE [RpsPKey] (\"PKey\" TEXT NOT NULL, \"UserLu\" TEXT, \"NextSystemGenerationCounter\" INTEGER, \"SystemInitializationCounter\" INTEGER, \"RplLU\" TEXT)"}]}]}
+[2025-11-06T17:03:14.182] [DEBUG] local - OVERALL EXECUTION TIME: 1 ms
+[2025-11-06T17:03:14.203] [DEBUG] local - Executing operation : selectParameterized
+[2025-11-06T17:03:14.203] [DEBUG] local - Payload : {"anchor_id":"13","action":"executeAsync","operation":"selectParameterized","transaction":"0","workload":[{"query":"PRAGMA cache_size = 100000","parameters":[],"qid":0}]}
+[2025-11-06T17:03:14.203] [DEBUG] local - /query REQUEST RECEIVED
+[2025-11-06T17:03:14.204] [DEBUG] local - QUERY: {"query":"PRAGMA cache_size = 100000","parameters":[],"qid":0}
+[2025-11-06T17:03:14.204] [DEBUG] local - ROWS RETURNED: 0
+[2025-11-06T17:03:14.204] [DEBUG] local - {"anchor_id":"13","success":true,"results":[{"qid":0,"result":[]}]}
+[2025-11-06T17:03:14.204] [DEBUG] local - OVERALL EXECUTION TIME: 1 ms
+[2025-11-06T17:03:14.207] [DEBUG] local - Executing operation : selectParameterized
+[2025-11-06T17:03:14.207] [DEBUG] local - Payload : {"anchor_id":"16","action":"executeAsync","operation":"selectParameterized","transaction":"0","workload":[{"query":"SELECT tbl_name, name, sql from sqlite_master WHERE type = 'index' AND sql IS NOT NULL","parameters":[],"qid":1}]}
+[2025-11-06T17:03:14.207] [DEBUG] local - /query REQUEST RECEIVED
+[2025-11-06T17:03:14.208] [DEBUG] local - QUERY: {"query":"SELECT tbl_name, name, sql from sqlite_master WHERE type = 'index' AND sql IS NOT NULL","parameters":[],"qid":1}
+[2025-11-06T17:03:14.208] [DEBUG] local - ROWS RETURNED: 0
+[2025-11-06T17:03:14.208] [DEBUG] local - {"anchor_id":"16","success":true,"results":[{"qid":1,"result":[]}]}
+[2025-11-06T17:03:14.208] [DEBUG] local - OVERALL EXECUTION TIME: 1 ms
+[2025-11-06T17:08:09.200] [INFO] server - The server closed successfully.
